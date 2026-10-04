@@ -72,6 +72,18 @@ header {
     color: white;
 }
 
+/* ESTILOS PARA TU FOTO DE PERFIL */
+.foto-portafolio {
+    width: 160px;               /* Tamaño horizontal ideal */
+    height: 160px;              /* Tamaño vertical idéntico para que sea cuadrada */
+    border-radius: 50%;         /* La recorta perfectamente en círculo */
+    object-fit: cover;          /* Evita que la foto se estire o se deforme */
+    display: block;             /* Permite aplicar márgenes de centrado */
+    margin: 0 auto 20px auto;   /* Centrada horizontalmente y con separación abajo */
+    border: 4px solid #ffffff;   /* Borde blanco profesional */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
+}
+
 .hero h2 {
     font-size: 50px;
     margin-bottom: 20px;
