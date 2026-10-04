@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>MiWeb</h1>
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+
+            <ul id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div>
+                <h2>Bienvenido a mi página web</h2>
+                <p>
+                    Una página moderna creada utilizando HTML, CSS y JavaScript.
+                </p>
+
+                <button id="welcomeBtn">Haz clic aquí</button>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <h2>Mis servicios</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Diseño Web</h3>
+                    <p>Diseños modernos, atractivos y adaptables a cualquier dispositivo.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Desarrollo</h3>
+                    <p>Aplicaciones web rápidas y funcionales utilizando tecnologías modernas.</p>
+                </article>
+
+                <article class="card">
+                    <h3>JavaScript</h3>
+                    <p>Interacciones dinámicas para hacer tu página más interesante.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Tu nombre" required>
+
+                <input type="email" id="email" placeholder="Tu correo" required>
+
+                <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 MiWeb - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
