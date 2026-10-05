@@ -72,16 +72,16 @@ header {
     color: white;
 }
 
-/* ESTILOS CONTROLADOS PARA TU FOTO DE PERFIL */
+/* Foto de perfil */
 .foto-portafolio {
-    width: 160px;               /* Ancho ideal */
-    height: 160px;              /* Alto idéntico para mantener proporción 1:1 */
-    border-radius: 50%;         /* Recorte circular impecable */
-    object-fit: cover;          /* Evita distorsiones en las facciones de tu rostro */
-    display: block;             /* Permite centrar el bloque */
-    margin: 0 auto 20px auto;   /* Centrado automático y espacio inferior */
-    border: 4px solid #ffffff;   /* Borde blanco profesional */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave estéticamente agradable */
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero h2 {
@@ -227,4 +227,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
