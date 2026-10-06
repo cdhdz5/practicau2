@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - David Hernández</title>
+    <title>David Hernández | Desarrollador de Software</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navegación Principal -->
     <header>
         <nav class="navbar">
             <h1>DavidWeb</h1>
-
-            <button id="menuBtn" class="menu-btn">☰</button>
-
+            <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
             <ul id="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
@@ -23,60 +22,55 @@
     </header>
 
     <main>
+        <!-- Sección Principal (Hero) -->
         <section id="inicio" class="hero">
             <div>
-                <img src="foto-traje.png" alt="Foto de perfil de David Hernández" class="foto-portafolio">
-
+                <img src="foto-traje.png" alt="Foto de perfil profesional de David Hernández" class="foto-portafolio">
                 <h2>Hola, soy David Hernández</h2>
-
                 <p>
-                    Desarrollador de Software. Una página moderna creada utilizando HTML, CSS y JavaScript.
+                    Desarrollador de Software. Especializado en la creación de aplicaciones web modernas, funcionales y optimizadas utilizando HTML, CSS y JavaScript.
                 </p>
-
-                <button id="welcomeBtn">Haz clic aquí</button>
+                <button id="welcomeBtn">Ver Proyectos</button>
             </div>
         </section>
 
+        <!-- Sección de Servicios -->
         <section id="servicios" class="services">
-            <h2>Mis servicios</h2>
-
+            <h2>Mis Servicios</h2>
             <div class="cards">
                 <article class="card">
-                    <h3>Diseño Web</h3>
-                    <p>Diseños modernos, atractivos y adaptables a cualquier dispositivo.</p>
+                    <h3>Diseño Web Moderno</h3>
+                    <p>Interfaces atractivas, limpias y adaptables a cualquier tamaño de pantalla o dispositivo móvil.</p>
                 </article>
 
                 <article class="card">
-                    <h3>Desarrollo</h3>
-                    <p>Aplicaciones web rápidas y funcionales utilizando tecnologías modernas.</p>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Construcción de aplicaciones e infraestructuras estables utilizando los estándares actuales de la industria.</p>
                 </article>
 
                 <article class="card">
-                    <h3>JavaScript</h3>
-                    <p>Interacciones dinámicas para hacer tu página más interesante.</p>
+                    <h3>Lógica y Dinamismo</h3>
+                    <p>Integración de interacciones dinámicas con JavaScript para ofrecer una experiencia de usuario fluida.</p>
                 </article>
             </div>
         </section>
 
+        <!-- Sección de Contacto -->
         <section id="contacto" class="contact">
-            <h2>Contacto</h2>
-
+            <h2>¿Tienes un proyecto en mente?</h2>
             <form id="contactForm">
                 <input type="text" id="name" placeholder="Tu nombre" required>
-
-                <input type="email" id="email" placeholder="Tu correo" required>
-
-                <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
-
-                <button type="submit">Enviar mensaje</button>
+                <input type="email" id="email" placeholder="Tu correo electrónico" required>
+                <textarea id="message" placeholder="Escribe los detalles de tu mensaje aquí..." required></textarea>
+                <button type="submit">Enviar Mensaje</button>
             </form>
-
             <p id="formMessage"></p>
         </section>
     </main>
 
+    <!-- Pie de Página -->
     <footer>
-        <p>© 2026 David Hernández - Todos los derechos reservados.</p>
+        <p>© <layout>followupButton(query="""Add this observance to my calendar""", label="""2026""", variant=FOLLOWUP_BUTTON_VARIANT_DATE_DROPDOWN)</layout> David Hernández - Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
