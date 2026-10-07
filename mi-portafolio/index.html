@@ -3,76 +3,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de David Hernández, desarrollador de software.">
     <title>David Hernández | Desarrollador de Software</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navegación Principal -->
-    <header>
-        <nav class="navbar">
-            <h1>DavidWeb</h1>
-            <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
-            <ul id="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="header">
+    <nav class="navbar">
+        <a href="#inicio" class="logo">David<span>Web</span></a>
 
-    <main>
-        <!-- Sección Principal (Hero) -->
-        <section id="inicio" class="hero">
-            <div>
-                <img src="foto-traje.png" alt="Foto de perfil profesional de David Hernández" class="foto-portafolio">
-                <h2>Hola, soy David Hernández</h2>
+        <button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul id="menu" class="nav-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Disponible para proyectos
+            </div>
+
+            <div class="profile-container">
+                <div class="profile-glow"></div>
+
+                <img
+                    src="foto-traje.png"
+                    alt="David Hernández, desarrollador de software"
+                    class="foto-portafolio"
+                >
+            </div>
+
+            <p class="hero-subtitle">DESARROLLADOR DE SOFTWARE</p>
+
+            <h1>
+                Hola, soy <span>David Hernández</span>
+            </h1>
+
+            <p class="hero-description">
+                Creo experiencias web modernas, rápidas y funcionales,
+                combinando diseño, tecnología y una excelente experiencia de usuario.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn btn-primary">
+                    Ver mis servicios <span>→</span>
+                </a>
+
+                <a href="#contacto" class="btn btn-secondary">
+                    Hablemos
+                </a>
+            </div>
+
+            <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+            </div>
+
+        </div>
+
+        <a href="#sobre-mi" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+            <span></span>
+        </a>
+
+    </section>
+
+
+    <section id="sobre-mi" class="about section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+                <span class="section-tag">SOBRE MÍ</span>
+
+                <h2>
+                    Construyendo soluciones <span>digitales</span>
+                </h2>
+
                 <p>
-                    Desarrollador de Software. Especializado en la creación de aplicaciones web modernas, funcionales y optimizadas utilizando HTML, CSS y JavaScript.
+                    Me apasiona transformar ideas en experiencias digitales
+                    atractivas, funcionales y fáciles de utilizar.
                 </p>
-                <button id="welcomeBtn">Ver Proyectos</button>
             </div>
-        </section>
 
-        <!-- Sección de Servicios -->
-        <section id="servicios" class="services">
-            <h2>Mis Servicios</h2>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        Soy desarrollador de software enfocado en el desarrollo web.
+                        Me gusta crear sitios y aplicaciones que no solo se vean bien,
+                        sino que también funcionen de manera rápida, intuitiva y eficiente.
+                    </p>
+
+                    <p>
+                        Trabajo principalmente con tecnologías web modernas como HTML,
+                        CSS y JavaScript, cuidando cada detalle del diseño y la
+                        experiencia del usuario.
+                    </p>
+
+                    <div class="about-stats">
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Compromiso</span>
+                        </div>
+
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Creatividad</span>
+                        </div>
+
+                        <div>
+                            <strong>∞</strong>
+                            <span>Aprendizaje</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="code-window">
+
+                        <div class="window-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="code-content">
+
+                            <p>
+                                <span class="code-purple">const</span>
+                                developer =
+                                <span class="code-yellow">David</span>;
+                            </p>
+
+                            <p>
+                                developer.<span class="code-blue">skills</span> = [
+                            </p>
+
+                            <p class="indent">
+                                <span class="code-green">"HTML"</span>,
+                            </p>
+
+                            <p class="indent">
+                                <span class="code-green">"CSS"</span>,
+                            </p>
+
+                            <p class="indent">
+                                <span class="code-green">"JavaScript"</span>
+                            </p>
+
+                            <p>];</p>
+
+                            <p>
+                                developer.<span class="code-blue">passion</span> =
+                                <span class="code-green">"Web"</span>;
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="servicios" class="services section">
+
+        <div class="section-container">
+
+            <div class="section-heading centered">
+
+                <span class="section-tag">MIS SERVICIOS</span>
+
+                <h2>
+                    Lo que puedo hacer <span>por ti</span>
+                </h2>
+
+                <p>
+                    Soluciones web pensadas para ayudarte a destacar
+                    en el mundo digital.
+                </p>
+
+            </div>
+
+
             <div class="cards">
-                <article class="card">
-                    <h3>Diseño Web Moderno</h3>
-                    <p>Interfaces atractivas, limpias y adaptables a cualquier tamaño de pantalla o dispositivo móvil.</p>
-                </article>
 
                 <article class="card">
+
+                    <div class="card-number">01</div>
+
+                    <div class="card-icon">✦</div>
+
+                    <h3>Diseño Web</h3>
+
+                    <p>
+                        Diseños modernos, elegantes y adaptables a computadoras,
+                        tablets y teléfonos móviles.
+                    </p>
+
+                    <a href="#contacto">
+                        Más información →
+                    </a>
+
+                </article>
+
+
+                <article class="card featured">
+
+                    <div class="card-number">02</div>
+
+                    <div class="card-icon">&lt;/&gt;</div>
+
                     <h3>Desarrollo Frontend</h3>
-                    <p>Construcción de aplicaciones e infraestructuras estables utilizando los estándares actuales de la industria.</p>
+
+                    <p>
+                        Desarrollo de interfaces rápidas y funcionales utilizando
+                        tecnologías web modernas.
+                    </p>
+
+                    <a href="#contacto">
+                        Más información →
+                    </a>
+
                 </article>
+
 
                 <article class="card">
-                    <h3>Lógica y Dinamismo</h3>
-                    <p>Integración de interacciones dinámicas con JavaScript para ofrecer una experiencia de usuario fluida.</p>
+
+                    <div class="card-number">03</div>
+
+                    <div class="card-icon">⚡</div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Agrego interactividad, animaciones y funcionalidades
+                        dinámicas para mejorar la experiencia del usuario.
+                    </p>
+
+                    <a href="#contacto">
+                        Más información →
+                    </a>
+
                 </article>
+
             </div>
-        </section>
 
-        <!-- Sección de Contacto -->
-        <section id="contacto" class="contact">
-            <h2>¿Tienes un proyecto en mente?</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Tu nombre" required>
-                <input type="email" id="email" placeholder="Tu correo electrónico" required>
-                <textarea id="message" placeholder="Escribe los detalles de tu mensaje aquí..." required></textarea>
-                <button type="submit">Enviar Mensaje</button>
+        </div>
+
+    </section>
+
+
+    <section class="process section">
+
+        <div class="section-container">
+
+            <div class="section-heading centered">
+
+                <span class="section-tag">MI PROCESO</span>
+
+                <h2>
+                    De una idea a una <span>realidad</span>
+                </h2>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-item">
+                    <span>01</span>
+
+                    <h3>Idea</h3>
+
+                    <p>
+                        Escucho tus necesidades y definimos juntos
+                        el objetivo del proyecto.
+                    </p>
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-item">
+                    <span>02</span>
+
+                    <h3>Diseño</h3>
+
+                    <p>
+                        Creo una estructura visual moderna y enfocada
+                        en tus usuarios.
+                    </p>
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-item">
+                    <span>03</span>
+
+                    <h3>Desarrollo</h3>
+
+                    <p>
+                        Transformo el diseño en una página funcional,
+                        responsive y optimizada.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contacto" class="contact section">
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <span class="section-tag">CONTACTO</span>
+
+                <h2>
+                    ¿Tienes un proyecto <span>en mente?</span>
+                </h2>
+
+                <p>
+                    Cuéntame tu idea. Estoy listo para ayudarte a convertirla
+                    en una experiencia digital profesional.
+                </p>
+
+
+                <div class="contact-details">
+
+                    <div class="contact-detail">
+
+                        <div class="detail-icon">✉</div>
+
+                        <div>
+                            <small>Email</small>
+                            <strong>Contáctame mediante el formulario</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <div class="detail-icon">⌁</div>
+
+                        <div>
+                            <small>Especialidad</small>
+                            <strong>Desarrollo Web</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="input-group">
+
+                    <label for="name">Nombre</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="¿Cómo te llamas?"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="email">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="tu@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="message">Mensaje</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Cuéntame sobre tu proyecto..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary submit-btn">
+                    Enviar mensaje <span>→</span>
+                </button>
+
+                <p id="formMessage" class="form-message"></p>
+
             </form>
-            <p id="formMessage"></p>
-        </section>
-    </main>
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>© <layout>followupButton(query="""Add this observance to my calendar""", label="""2026""", variant=FOLLOWUP_BUTTON_VARIANT_DATE_DROPDOWN)</layout> David Hernández - Todos los derechos reservados.</p>
-    </footer>
+        </div>
 
-    <script src="script.js"></script>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <a href="#inicio" class="logo">
+            David<span>Web</span>
+        </a>
+
+        <p>
+            Diseñando y desarrollando experiencias digitales.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © <span id="year"></span> David Hernández.
+            Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
